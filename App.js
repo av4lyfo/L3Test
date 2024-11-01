@@ -8,8 +8,6 @@ const InputBox = ({label, onChangeText}) => {
         <View>
             <Text>{label}</Text>
             <TextInput style={{borderWidth: 1}} onChangeText={onChangeText}/>
-
-
         </View>
     );
 };
@@ -48,7 +46,6 @@ return (
        }>
        <Text>LOG IN</Text>
        </TouchableOpacity>
-
     </View>
 );
 };
