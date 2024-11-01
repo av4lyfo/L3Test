@@ -18,8 +18,6 @@ const MyApp = () => {
     const [pw, setPw] = useState('');
     const [user, setUser] = useState('');
     const [userType, setuserType] = useState('');
-    let mymessage='';
-
 
 
 return (
@@ -38,6 +36,7 @@ return (
 
        <TouchableOpacity onPress={()=> {
            const correctPassword = '123456';
+           let mymessage='Error! Wrong Password';
         if (pw === correctPassword) {
             mymessage = 'Welcome ' + userType +' '+user;
         }
